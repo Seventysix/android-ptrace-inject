@@ -13,3 +13,22 @@ Just use : `ndk-build`
 Then grant permission to "myinjector" like : `chmod +x /data/local/tmp/myinjector`
 
 - step 3 : Use commad : `./myinjector pid lib-path-to-inject func-symbol params`. Example : `./myinjector 1234 /data/local/tmp/libtest.so _Z10hook_entryPc paramstr`
+
+## Experiment result
+
+Execute:
+
+![execute](https://raw.githubusercontent.com/Seventysix/android-ptrace-inject/dev/res/execute.png "execute")
+
+Inject result:
+
+![inject_func](https://raw.githubusercontent.com/Seventysix/android-ptrace-inject/dev/res/inject_func_execute.png "inject_func")
+
+![inject_so](https://raw.githubusercontent.com/Seventysix/android-ptrace-inject/dev/res/inject_so.png "inject_so")
+
+Symbol of libtest64.so:
+
+![libtest64.so](https://raw.githubusercontent.com/Seventysix/android-ptrace-inject/dev/res/libtest_symbol.png "libtest64.so")
+
+
+
